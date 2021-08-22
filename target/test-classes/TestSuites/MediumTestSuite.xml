@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MediumTestSuite" verbose="1" >
+
+	<listeners>
+		<listener class-name="base.base.TestListener"></listener>
+	</listeners>
+
+	<test name="AmazonTestsTC1-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="medium.MediumTests">
+				<methods>
+					<include name="amazonTestsTC1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AmazonTestsTC2-FF">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="medium.MediumTests">
+				<methods>
+					<include name="amazonTestsTC2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AmazonTestsTC3-ED">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="medium.MediumTests">
+				<methods>
+					<include name="amazonTestsTC3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AmazonTestsTC4-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="medium.MediumTests">
+				<methods>
+					<include name="amazonTestsTC4"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

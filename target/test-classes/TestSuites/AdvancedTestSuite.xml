@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AdvancedTestSuite" verbose="1" >
+	<listeners>
+		<listener class-name="base.base.TestListener"></listener>
+	</listeners>
+	<test name="AdvancedTests">
+		<classes>
+			<class name="advanced.AdvancedTests">
+<!--				<methods>-->
+<!--					<include name="calendlyTests"></include>-->
+<!--				</methods>-->
+			</class>
+		</classes>
+	</test>
+</suite>
